@@ -1,0 +1,211 @@
+# see https://virtualship.readthedocs.io/en/latest/user-guide/tutorials/working_with_expedition_yaml.html for more details on how to edit this file
+#
+schedule:
+  waypoints:
+    - location:
+        latitude: 36.928304
+        longitude: -75.411435
+      time: 2021-01-01 19:05:00
+    - instrument: 
+      - DRIFTER
+      location:
+        latitude: 36.914153
+        longitude: -70.940147
+      time: 2021-01-04 06:40:41
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 36.657459
+        longitude: -70.485808
+      time: 2021-01-10 19:46:07 
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 36.822741
+        longitude: -70.514993
+      time: 2021-01-11 14:31:53
+    - instrument:
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 36.982903
+        longitude: -70.544341
+      time: 2021-01-12 09:16:38
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.147278
+        longitude: -70.578137
+      time: 2021-01-13 03:11:37
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.248512
+        longitude: -70.597521
+      time: 2021-01-13 15:21:37
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.351519
+        longitude: -70.61675
+      time: 2021-01-14 21:23:26
+    - instrument: 
+      - CTD
+      - DRIFTER
+      - DRIFTER
+      location:
+        latitude: 37.455826
+        longitude: -70.640083
+      time: 2021-01-16 03:22:26
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.55904
+        longitude: -70.660866
+      time: 2021-01-17 09:14:45
+    - instrument: 
+      - CTD
+      - DRIFTER
+      - DRIFTER
+      location:
+        latitude: 37.658478
+        longitude: -70.678239
+      time: 2021-01-18 14:59:12
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.757869
+        longitude: -70.69747
+      time: 2021-01-20 02:53:02
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 37.923309
+        longitude: -70.727883
+      time: 2021-01-20 20:39:54
+    - instrument: 
+      - CTD
+      location:
+        latitude: 38.086852
+        longitude: -70.76047
+      time: 2021-01-21 13:59:48
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 38.231512
+        longitude: -70.790106
+      time: 2021-01-22 07:27:39
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 38.401906
+        longitude: -70.824615
+      time: 2021-01-23 00:53:23
+    - instrument: 
+      - CTD
+      location:
+        latitude: 38.574207
+        longitude: -70.861457
+      time: 2021-01-23 18:44:55
+    - instrument: 
+      - CTD
+      location:
+        latitude: 38.790998
+        longitude: -70.901503
+      time: 2021-01-24 12:30:07
+    - instrument:
+      - CTD
+      location:
+        latitude: 39.008311
+        longitude: -70.944268
+      time: 2021-01-25 05:51:21
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 39.20266
+        longitude: -70.978916
+      time: 2021-01-25 22:49:26
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 39.379628
+        longitude: -71.014341
+      time: 2021-01-26 15:38:09 
+    - instrument: 
+      - CTD
+      - DRIFTER
+      location:
+        latitude: 39.55669
+        longitude: -71.051726
+      time: 2021-01-27 07:43:16
+    - instrument: 
+      - CTD
+      location:
+        latitude: 39.721597
+        longitude: -71.088036
+      time: 2021-01-28 11:41:10
+instruments_config:
+  adcp_config:
+    num_bins: 40
+    max_depth_meter: -1000.0
+    period_minutes: 5.0
+    sensors:
+      - VELOCITY
+  argo_float_config:
+    cycle_days: 10.0
+    drift_days: 9.0
+    drift_depth_meter: -1000.0
+    max_depth_meter: -2000.0
+    min_depth_meter: 0.0
+    vertical_speed_meter_per_second: -0.1
+    stationkeeping_time_minutes: 20.0
+    lifetime_days: 63.0
+    sensors:
+      - TEMPERATURE
+      - SALINITY
+  ctd_config:
+    max_depth_meter: -2000.0
+    min_depth_meter: -11.0
+    stationkeeping_time_minutes: 50.0
+    sensors:
+      - TEMPERATURE
+      - SALINITY
+      - OXYGEN
+      - CHLOROPHYLL
+      - NITRATE
+      - PHOSPHATE
+      - PH
+      - PHYTOPLANKTON
+      - PRIMARY_PRODUCTION
+  drifter_config:
+    depth_meter: -1.0
+    lifetime_days: 42.0
+    stationkeeping_time_minutes: 20.0
+    sensors:
+      - TEMPERATURE
+  xbt_config:
+    max_depth_meter: -285.0
+    min_depth_meter: -2.0
+    fall_speed_meter_per_second: 6.7
+    deceleration_coefficient: 0.00225
+    sensors:
+      - TEMPERATURE
+  ship_underwater_st_config:
+    period_minutes: 5.0
+    sensors:
+      - TEMPERATURE
+      - SALINITY
+ship_config:
+  ship_speed_knots: 10.0
