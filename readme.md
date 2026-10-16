@@ -1,5 +1,7 @@
 # VirtualShip Quick Start
 
+This is a repository that distilles information provided from the virtualship developers/website to be used for teaching in 12.808. 
+
 ## 1. What is VirtualShip?
 
 [VirtualShip](https://virtualship.parcels-code.org/) is a command-line simulator for planning and carrying out a virtual oceanographic research expedition. It uses ocean-model data to simulate measurements from instruments such as CTDs, ADCPs, surface drifters, Argo floats, and XBTs.
